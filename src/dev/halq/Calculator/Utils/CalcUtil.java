@@ -8,7 +8,7 @@ import static dev.halq.Utils.CmdUtil.*;
  */
 
 public class CalcUtil {
-
+//
     public static void calcq(String operator, double value, double value2){
         switch (operator){
 
