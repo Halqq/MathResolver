@@ -1,12 +1,13 @@
 package dev.halq;
 
-import dev.halq.Calculator.Calculator;
-import dev.halq.Equation.EquationResolver;
+import dev.halq.calculator.Calculator;
+import dev.halq.equation.EquationResolver;
+import dev.halq.theorem.Thales;
 
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-import static dev.halq.Utils.CmdUtil.print;
+import static dev.halq.utils.CmdUtil.print;
 
 /**
  * @author Halq
@@ -14,6 +15,9 @@ import static dev.halq.Utils.CmdUtil.print;
  */
 
 public class Main {
+    public Main(){
+        super();
+    }
 
 
     public static void main(String[] args) throws InterruptedException {
@@ -29,7 +33,7 @@ public class Main {
         print("Wait.. loading MathResolver resources");
         TimeUnit.SECONDS.sleep(3);
 
-        print("Calculator or Equation?");
+        print("Calculator, Equation, Thales");
 
         r = reader.next();
 
@@ -43,8 +47,13 @@ public class Main {
             TimeUnit.SECONDS.sleep(2);
             EquationResolver.main();
 
-        } else {
-            print("Please put valid value (Calculator or Equation)");
+        } else if(r.equals("Thales")){
+            print("Loading Thales theorem");
+            TimeUnit.SECONDS.sleep(1);
+            Thales.main();
+
+            } else {
+            print("Please put valid value (Calculator, Equation, Thales)");
         }
 
     }

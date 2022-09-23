@@ -1,10 +1,10 @@
-package dev.halq.Calculator;
+package dev.halq.calculator;
 
-import dev.halq.Calculator.Utils.CalcUtil;
+import dev.halq.calculator.utils.CalcUtil;
 
 import java.util.Scanner;
 
-import static dev.halq.Utils.CmdUtil.print;
+import static dev.halq.utils.CmdUtil.print;
 
 /**
  * @author Halq
@@ -22,6 +22,7 @@ public class Calculator {
         print("Please put first number");
 
         if (!reader.hasNextDouble()) {
+
             print("Please put valid value");
             reader.hasNextDouble();
 
@@ -34,6 +35,7 @@ public class Calculator {
         op = reader.next();
 
         if (!(op.equals("+") || op.equals("-") || op.equals("+") || op.equals("/") || op.equals("%"))) {
+
             print("Please put valid operator");
 
         }
@@ -41,6 +43,7 @@ public class Calculator {
         print("Please put second number");
 
         if (!reader.hasNextDouble()) {
+
             print("Please put valid value");
             reader.hasNextDouble();
 

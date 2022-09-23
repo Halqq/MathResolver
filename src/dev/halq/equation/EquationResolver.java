@@ -1,8 +1,8 @@
-package dev.halq.Equation;
+package dev.halq.equation;
 
 import java.util.Scanner;
 
-import static dev.halq.Utils.CmdUtil.print;
+import static dev.halq.utils.CmdUtil.print;
 
 /**
  * @author Halq
@@ -22,6 +22,7 @@ public class EquationResolver {
 
         print("a:");
         if (!reader.hasNextDouble()) {
+
             print("Please give valid value");
             reader.hasNextDouble();
 
@@ -31,6 +32,7 @@ public class EquationResolver {
 
         print("b:");
         if (!reader.hasNextDouble()) {
+
             print("Please give valid value");
             reader.hasNextDouble();
 
@@ -40,6 +42,7 @@ public class EquationResolver {
 
         print("c:");
         if (!reader.hasNextDouble()) {
+
             print("Please give valid value");
             reader.hasNextDouble();
 
@@ -48,14 +51,17 @@ public class EquationResolver {
         c = reader.nextDouble();
 
         if (a != 0) {
+
             double r = (c - b) / a;
 
             print("Answer = " + r);
 
         } else if (b == c) {
+
             print("Answer = all x");
 
         } else {
+
             print("Invalid equation");
 
         }

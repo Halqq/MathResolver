@@ -1,6 +1,6 @@
-package dev.halq.Calculator.Utils;
+package dev.halq.calculator.utils;
 
-import static dev.halq.Utils.CmdUtil.*;
+import static dev.halq.utils.CmdUtil.*;
 
 /**
  * @author Halq

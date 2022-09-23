@@ -1,4 +1,4 @@
-package dev.halq.Utils;
+package dev.halq.utils;
 
 /**
  * @author Halq
